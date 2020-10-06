@@ -5,13 +5,14 @@ package cse360assignment02;
  */
 public class AddingMachine {
   private int total;
-  
+  private String formatter;
   /**
  * program that adds and subtracts
  * constructor for AddingMachine
  */
   public AddingMachine () {
     total = 0;  // not needed - included for clarity
+    formatter = '0';
   }
   
   /**
@@ -19,7 +20,7 @@ public class AddingMachine {
  * @return total
  */
   public int getTotal () {
-    return 0;
+    return total;
   }
   
   /**
@@ -27,6 +28,8 @@ public class AddingMachine {
  * @param  value added (self explanatory)
  */
   public void add (int value) {
+    total += value;
+    formatter += " + " + value;
   }
 
 /**
@@ -34,6 +37,8 @@ public class AddingMachine {
  * @param  value added
  */
   public void subtract (int value) {
+      total -= value;
+      formatter += " - " + value;
   }
 
 /**
@@ -41,12 +46,14 @@ public class AddingMachine {
  * @return formatter (self explanatory)
  */
   public String toString () {
-    return "";
+    return formatter;
   }
 
 /**
  * clears memory
  */
   public void clear() {
+      total = 0;
+      formatter = "0";
   }
 }
