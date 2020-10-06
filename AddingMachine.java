@@ -6,13 +6,33 @@ package cse360assignment02;
 public class AddingMachine {
   private int total;
   private String formatter;
+
+ /**
+ * test cases
+ */
+  /*public static void main(String args[])
+  {
+	  AddingMachine myCalculator = new AddingMachine();
+	  myCalculator.add(5);
+	  System.out.println(myCalculator.getTotal());
+	  myCalculator.subtract(3);
+	  System.out.println(myCalculator.getTotal());
+	  myCalculator.subtract(2);
+	  System.out.println(myCalculator.getTotal());
+	  myCalculator.add(1);
+	  System.out.println(myCalculator.getTotal());
+	  System.out.println(myCalculator.toString());
+	  myCalculator.clear();
+	  System.out.println(myCalculator.toString());
+  }*/
+
   /**
  * program that adds and subtracts
  * constructor for AddingMachine
  */
   public AddingMachine () {
     total = 0;  // not needed - included for clarity
-    formatter = '0';
+    formatter = "0";
   }
   
   /**
@@ -29,7 +49,7 @@ public class AddingMachine {
  */
   public void add (int value) {
     total += value;
-    formatter += " + " + value;
+    formatter += " + " + Integer.toString(value);
   }
 
 /**
@@ -38,7 +58,7 @@ public class AddingMachine {
  */
   public void subtract (int value) {
       total -= value;
-      formatter += " - " + value;
+      formatter += " - " + Integer.toString(value);
   }
 
 /**
