@@ -10,21 +10,18 @@ public class AddingMachine {
  /**
  * test cases
  */
-  /*public static void main(String args[])
+  public static void main(String args[])
   {
 	  AddingMachine myCalculator = new AddingMachine();
+	  myCalculator.add (4);
+	  System.out.println(myCalculator.getTotal());
+	  myCalculator.subtract (2);
+	  System.out.println(myCalculator.getTotal());
 	  myCalculator.add(5);
-	  System.out.println(myCalculator.getTotal());
-	  myCalculator.subtract(3);
-	  System.out.println(myCalculator.getTotal());
-	  myCalculator.subtract(2);
-	  System.out.println(myCalculator.getTotal());
-	  myCalculator.add(1);
 	  System.out.println(myCalculator.getTotal());
 	  System.out.println(myCalculator.toString());
 	  myCalculator.clear();
-	  System.out.println(myCalculator.toString());
-  }*/
+  }
 
   /**
  * program that adds and subtracts
